@@ -32,5 +32,15 @@ namespace FizzBuzz_Kata.Tests
 
             Check.That(output).IsEqualTo("Fizz");
         }
+
+        [TestCase(5)]
+        [TestCase(10)]
+        [TestCase(15)]
+        public void Should_Return_Buzz_When_Input_Is_Multiple_Of_5(int input)
+        {
+            string output = fizzBuzz.Compute(input);
+
+            Check.That(output).IsEqualTo("Buzz");
+        }
     }
 }
