@@ -4,6 +4,11 @@
     {
         public string Compute(int input)
         {
+            if (isMultipleOf(input, 3) && isMultipleOf(input, 5))
+            {
+                return "FizzBuzz";
+            }
+
             if (isMultipleOf(input, 5))
             {
                 return "Buzz";
